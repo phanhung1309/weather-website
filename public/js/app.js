@@ -19,7 +19,8 @@ weatherForm.addEventListener('submit', function(e) {
                 messageOne.textContent = data.error
             } else {
                 messageOne.textContent = `Location: ${data.location}`
-                messageTwo.textContent = `${data.weather_desc}. It is currently ${data.currentTemperature} degrees out. It feels like ${data.feelslike} degrees out.`
+                messageTwo.textContent = `${data.weather_desc}. It is currently ${data.currentTemperature} degrees out. It feels like ${data.feelslike} degrees out. 
+                The humidity is ${data.humidity}%. The Ultraviolet (UV) index is ${data.uv_index}`
             }
         })
     })
